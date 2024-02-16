@@ -7,4 +7,5 @@ body {
     display: flex; 
     justify-content: spaced evenly;
     flex-direction: row;
+    align-content: center;
 }
