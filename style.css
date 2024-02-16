@@ -6,6 +6,5 @@ color: #ffffff;
 body {
     display: flex; 
     justify-content: spaced evenly;
-    flex-direction: row;
-    align-content: center;
+    vertical-align: center;
 }
