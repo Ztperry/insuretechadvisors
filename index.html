@@ -4,100 +4,123 @@
     <meta charset="UTF-8">
     <title>Intelligent Call Routing Platform</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Bootstrap CSS CDN -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
     <!-- Link to external CSS -->
     <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
-    <!-- Header Section -->
-    <header>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
         <div class="container">
-            <h1>Intelligent Call Routing Platform</h1>
-            <nav>
-                <ul>
-                    <li><a href="index.html">Home</a></li>
-                    <li><a href="pages/about.html">About Us</a></li>
-                    <li><a href="pages/features.html">Features</a></li>
-                    <li><a href="pages/how-it-works.html">How It Works</a></li>
-                    <li><a href="pages/solutions.html">Solutions</a></li>
-                    <li><a href="pages/clients.html">Clients</a></li>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                    <li><a href="pages/request-demo.html" class="btn">Request a Demo</a></li>
+            <!-- Logo -->
+            <a class="navbar-brand" href="index.html">
+                <img src="assets/IMG_0114.png" alt="Company Logo" height="40">
+            </a>
+            <!-- Toggler/collapsible Button -->
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarResponsive">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <!-- Navbar links -->
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/about.html">About Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/features.html">Features</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/how-it-works.html">How It Works</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/solutions.html">Solutions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="pages/contact.html">Contact Us</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="btn btn-primary" href="pages/request-demo.html">Request a Demo</a>
+                    </li>
                 </ul>
-            </nav>
+            </div>
         </div>
-    </header>
+    </nav>
 
     <!-- Main Content Section -->
     <main>
         <!-- Hero Section -->
         <section class="hero">
-            <div class="container">
-                <h2>Revolutionize Your Call Routing with AI-Powered Intent Recognition</h2>
-                <p>Enhance customer satisfaction and operational efficiency with our intelligent call routing platform.</p>
-                <a href="pages/request-demo.html" class="btn">Request a Demo</a>
+            <div class="container text-center text-white">
+                <h1 class="display-4">Revolutionize Your Call Routing with AI-Powered Intent Recognition</h1>
+                <p class="lead">Enhance customer satisfaction and operational efficiency with our intelligent call routing platform.</p>
+                <a href="pages/request-demo.html" class="btn btn-primary btn-lg">Request a Demo</a>
             </div>
         </section>
 
         <!-- Features Section -->
-        <section class="features">
+        <section class="features py-5">
             <div class="container">
-                <h2>Key Features</h2>
-                <div class="feature-list">
-                    <div class="feature-item">
+                <h2 class="text-center mb-5">Key Features</h2>
+                <div class="row">
+                    <div class="col-md-4">
                         <h3>LLM-Powered Intent Recognition</h3>
                         <p>Leverage advanced AI models to understand customer needs.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="col-md-4">
                         <h3>Customizable IVR Systems</h3>
                         <p>Create dynamic IVR trees based on your data and preferences.</p>
                     </div>
-                    <div class="feature-item">
+                    <div class="col-md-4">
                         <h3>Seamless Integration</h3>
                         <p>Integrate effortlessly with Zendesk Talk, Talkdesk, Cisco, and more.</p>
                     </div>
                 </div>
-                <a href="pages/features.html" class="btn">Learn More</a>
-            </div>
-        </section>
-
-        <!-- Testimonials Section -->
-        <section class="testimonials">
-            <div class="container">
-                <h2>Trusted by Leading Insurance Companies</h2>
-                <!-- Client logos or testimonials go here -->
-                <div class="client-logos">
-                    <img src="images/client1.png" alt="Client 1 Logo">
-                    <img src="images/client2.png" alt="Client 2 Logo">
-                    <img src="images/client3.png" alt="Client 3 Logo">
+                <div class="text-center mt-4">
+                    <a href="pages/features.html" class="btn btn-outline-primary">Learn More</a>
                 </div>
             </div>
         </section>
 
-        <!-- Call-to-Action Section -->
-        <section class="call-to-action">
+        <!-- Commented Out Testimonials Section -->
+        <!--
+        <section class="testimonials py-5 bg-light">
             <div class="container">
+                <h2 class="text-center mb-5">Trusted by Leading Insurance Companies</h2>
+                <div class="row">
+                    <!-- Client logos or testimonials go here -->
+                </div>
+            </div>
+        </section>
+        -->
+
+        <!-- Call-to-Action Section -->
+        <section class="call-to-action py-5 bg-primary text-white">
+            <div class="container text-center">
                 <h2>Ready to Transform Your Call Routing?</h2>
                 <p>Contact us today to see how our platform can benefit your business.</p>
-                <a href="pages/request-demo.html" class="btn">Request a Demo</a>
+                <a href="pages/request-demo.html" class="btn btn-light btn-lg">Request a Demo</a>
             </div>
         </section>
     </main>
 
     <!-- Footer Section -->
-    <footer>
-        <div class="container">
+    <footer class="py-4 bg-dark text-white">
+        <div class="container text-center">
             <p>&copy; 2023 Your Company Name. All rights reserved.</p>
-            <nav>
-                <ul>
-                    <li><a href="pages/privacy-policy.html">Privacy Policy</a></li>
-                    <li><a href="pages/terms-of-service.html">Terms of Service</a></li>
-                    <li><a href="pages/contact.html">Contact Us</a></li>
-                </ul>
-            </nav>
+            <ul class="list-inline">
+                <li class="list-inline-item"><a href="pages/privacy-policy.html" class="text-white">Privacy Policy</a></li>
+                <li class="list-inline-item"><a href="pages/terms-of-service.html" class="text-white">Terms of Service</a></li>
+                <li class="list-inline-item"><a href="pages/contact.html" class="text-white">Contact Us</a></li>
+            </ul>
         </div>
     </footer>
 
+    <!-- Bootstrap JS, Popper.js, and jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
     <!-- Link to external JavaScript -->
-    <script src="js/script.js"></script>
+    <script src="js/main.js"></script>
 </body>
 </html>
