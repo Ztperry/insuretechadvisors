@@ -1,311 +1,70 @@
-/* CSS Variables for Color Scheme */
-:root {
-    --primary-color: #007bff;       /* Bootstrap Primary Color */
-    --secondary-color: #6c757d;     /* Bootstrap Secondary Color */
-    --success-color: #28a745;       /* Bootstrap Success Color */
-    --danger-color: #dc3545;        /* Bootstrap Danger Color */
-    --warning-color: #ffc107;       /* Bootstrap Warning Color */
-    --info-color: #17a2b8;          /* Bootstrap Info Color */
-    --light-color: #f8f9fa;         /* Bootstrap Light Color */
-    --dark-color: #343a40;          /* Bootstrap Dark Color */
-    --white-color: #ffffff;         /* White Color */
-    --text-color: #212529;          /* Bootstrap Body Text Color */
-    --gray-color: #6c757d;          /* Bootstrap Gray Color */
-    --bg-hero: url('../assets/hero-background.jpg'); /* Hero Background Image */
-}
-
-/* General Styles */
-body {
-    font-family: Arial, sans-serif;
+/* About Us Section */
+.about-us p {
+    font-size: 18px;
     color: var(--text-color);
 }
 
-a {
-    color: var(--primary-color);
-}
-
-a:hover {
-    color: var(--primary-color);
-    text-decoration: none;
-}
-
-/* Navigation Bar Adjustments */
-.navbar-dark .navbar-nav .nav-link {
-    color: var(--white-color);
-}
-
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: var(--light-color);
-}
-
-.navbar-brand img {
-    height: 40px;
-    width: auto;
-}
-
-/* Hero Section */
-.hero {
-    background: var(--bg-hero) no-repeat center center/cover;
-    height: 500px;
-    display: flex;
-    align-items: center;
-    position: relative;
-    z-index: 1;
-}
-
-.hero::before {
-    content: '';
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5); /* Dark overlay */
-    z-index: -1;
-}
-
-.hero .container {
-    position: relative;
-    z-index: 2;
-}
-
-.hero h1 {
-    font-size: 48px;
-    color: var(--white-color);
-    margin-bottom: 20px;
-}
-
-.hero p {
-    font-size: 24px;
-    color: var(--white-color);
-    margin-bottom: 30px;
-}
-
-@media (max-width: 768px) {
-    .hero {
-        height: 400px;
-    }
-    .hero h1 {
-        font-size: 32px;
-    }
-    .hero p {
-        font-size: 18px;
-    }
-}
-
-/* Features Section */
-.features {
-    padding: 60px 0;
-}
-
-.features h2 {
+/* Services Section */
+.services h2 {
     color: var(--dark-color);
     margin-bottom: 40px;
 }
 
-.features h3 {
+.services h3 {
     color: var(--primary-color);
     margin-bottom: 15px;
 }
 
-.features p {
+.services p {
     color: var(--gray-color);
 }
 
-.features .btn {
-    margin-top: 30px;
-}
-
-/* Call-to-Action Section */
-.call-to-action {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-    padding: 60px 0;
-}
-
-.call-to-action h2 {
-    font-size: 36px;
-    margin-bottom: 20px;
-}
-
-.call-to-action p {
-    font-size: 18px;
+.services .col-md-4 {
     margin-bottom: 30px;
 }
 
-.call-to-action .btn {
-    background-color: var(--white-color);
+/* Technologies Section */
+.technologies h2 {
+    color: var(--dark-color);
+    margin-bottom: 40px;
+}
+
+.technologies .img-fluid {
+    max-width: 150px;
+    margin: 0 auto;
+}
+
+.technologies .col-md-3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Why Choose Us Section */
+.why-choose-us h2 {
+    color: var(--dark-color);
+    margin-bottom: 40px;
+}
+
+.why-choose-us h4 {
     color: var(--primary-color);
-    border: none;
+    margin-bottom: 15px;
 }
 
-.call-to-action .btn:hover {
-    background-color: var(--light-color);
-    color: var(--primary-color);
+.why-choose-us p {
+    color: var(--gray-color);
 }
 
-/* Footer */
-footer {
-    background-color: var(--dark-color);
-    color: var(--white-color);
-    padding: 20px 0;
-}
-
-footer p {
-    margin: 0;
-}
-
-footer a {
-    color: var(--white-color);
-}
-
-footer a:hover {
-    text-decoration: underline;
-}
-
-footer .list-inline-item + .list-inline-item {
-    margin-left: 15px;
-}
-
-/* Hide the Testimonials Section */
-.testimonials {
-    display: none;
-}
-
-/* Additional Custom Styles */
-/* Adjust the spacing of the navbar items */
-.navbar-nav .nav-item {
-    margin-left: 15px;
-}
-
-.navbar-nav .nav-item .btn {
-    margin-left: 15px;
-}
-
-@media (max-width: 992px) {
-    .navbar-nav .nav-item {
-        margin-left: 0;
+/* Adjustments for Smaller Screens */
+@media (max-width: 768px) {
+    .services .col-md-4,
+    .why-choose-us .col-md-6,
+    .technologies .col-md-3 {
+        text-align: center;
     }
-    .navbar-nav .nav-item .btn {
-        margin-left: 0;
-        margin-top: 10px;
+
+    .services .col-md-4,
+    .why-choose-us .col-md-6 {
+        margin-bottom: 30px;
     }
 }
-
-/* Button Customizations */
-.btn-primary {
-    background-color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-primary:hover {
-    background-color: #0069d9;
-    border-color: #0062cc;
-}
-
-.btn-outline-primary {
-    color: var(--primary-color);
-    border-color: var(--primary-color);
-}
-
-.btn-outline-primary:hover {
-    background-color: var(--primary-color);
-    color: var(--white-color);
-}
-
-/* Text Utilities */
-.text-white {
-    color: var(--white-color) !important;
-}
-
-.text-center {
-    text-align: center !important;
-}
-
-/* Background Utilities */
-.bg-dark {
-    background-color: var(--dark-color) !important;
-}
-
-.bg-light {
-    background-color: var(--light-color) !important;
-}
-
-.bg-primary {
-    background-color: var(--primary-color) !important;
-}
-
-.bg-secondary {
-    background-color: var(--secondary-color) !important;
-}
-
-.bg-white {
-    background-color: var(--white-color) !important;
-}
-
-/* Margin and Padding Utilities */
-.mt-4 {
-    margin-top: 1.5rem !important;
-}
-
-.mb-5 {
-    margin-bottom: 3rem !important;
-}
-
-.py-5 {
-    padding-top: 3rem !important;
-    padding-bottom: 3rem !important;
-}
-
-.py-4 {
-    padding-top: 1.5rem !important;
-    padding-bottom: 1.5rem !important;
-}
-
-/* Responsive Adjustments */
-@media (max-width: 576px) {
-    .call-to-action h2 {
-        font-size: 28px;
-    }
-    .call-to-action p {
-        font-size: 16px;
-    }
-}
-
-/* Custom Container Width for Hero Section */
-.hero .container {
-    max-width: 800px;
-}
-
-/* Remove outline on buttons when clicked */
-.btn:focus, .btn:active:focus, .btn.active:focus {
-    outline: none;
-    box-shadow: none;
-}
-
-/* Overlays for Hero Section */
-.hero-overlay {
-    position: absolute;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 100%;
-    background-color: rgba(0, 0, 0, 0.5);
-}
-
-/* Optional: Custom Scrollbar Styles */
-/* ::-webkit-scrollbar {
-    width: 10px;
-}
-
-::-webkit-scrollbar-track {
-    background: var(--light-color);
-}
-
-::-webkit-scrollbar-thumb {
-    background: var(--primary-color);
-}
-
-::-webkit-scrollbar-thumb:hover {
-    background: #0069d9;
-} */
