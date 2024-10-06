@@ -1,70 +1,67 @@
-/* About Us Section */
-.about-us p {
-    font-size: 18px;
+/* CSS Variables for Color Scheme */
+:root {
+    --primary-color: #007bff;
+    --dark-color: #343a40;
+    --white-color: #ffffff;
+    --bg-color: #f8f9fa;
+    --text-color: #212529;
+}
+
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
     color: var(--text-color);
+    background-color: var(--bg-color);
+    margin: 0;
+    padding: 0;
 }
 
-/* Services Section */
-.services h2 {
-    color: var(--dark-color);
-    margin-bottom: 40px;
+/* Under Construction Section */
+.under-construction {
+    height: 100vh;
+    background-color: var(--bg-color);
 }
 
-.services h3 {
+.under-construction .container {
+    margin-top: -50px; /* Adjust vertical alignment if needed */
+}
+
+.under-construction h1 {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    margin-bottom: 20px;
 }
 
-.services p {
-    color: var(--gray-color);
+.under-construction p {
+    color: var(--text-color);
+    font-size: 18px;
 }
 
-.services .col-md-4 {
-    margin-bottom: 30px;
-}
-
-/* Technologies Section */
-.technologies h2 {
-    color: var(--dark-color);
-    margin-bottom: 40px;
-}
-
-.technologies .img-fluid {
-    max-width: 150px;
-    margin: 0 auto;
-}
-
-.technologies .col-md-3 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-
-/* Why Choose Us Section */
-.why-choose-us h2 {
-    color: var(--dark-color);
-    margin-bottom: 40px;
-}
-
-.why-choose-us h4 {
+.under-construction a {
     color: var(--primary-color);
-    margin-bottom: 15px;
+    text-decoration: none;
 }
 
-.why-choose-us p {
-    color: var(--gray-color);
+.under-construction a:hover {
+    text-decoration: underline;
 }
 
-/* Adjustments for Smaller Screens */
+/* Footer */
+footer {
+    background-color: var(--dark-color);
+    color: var(--white-color);
+}
+
+footer p {
+    margin: 0;
+}
+
+/* Responsive Adjustments */
 @media (max-width: 768px) {
-    .services .col-md-4,
-    .why-choose-us .col-md-6,
-    .technologies .col-md-3 {
-        text-align: center;
+    .under-construction h1 {
+        font-size: 32px;
     }
 
-    .services .col-md-4,
-    .why-choose-us .col-md-6 {
-        margin-bottom: 30px;
+    .under-construction p {
+        font-size: 16px;
     }
 }
