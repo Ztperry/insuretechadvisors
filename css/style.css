@@ -19,40 +19,53 @@ body {
 /* Under Construction Section */
 .under-construction {
     height: 100vh;
-    background-color: var(--bg-color);
-}
-
-.under-construction .container {
-    margin-top: -50px; /* Adjust vertical alignment if needed */
+    background: linear-gradient(135deg, rgba(0,123,255,0.1), rgba(255,255,255,1));
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
 }
 
 .under-construction h1 {
     color: var(--primary-color);
     margin-bottom: 20px;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.1);
+    padding: 10px;
 }
 
 .under-construction p {
     color: var(--text-color);
     font-size: 18px;
+    padding: 10px 0;
 }
 
 .under-construction a {
-    color: var(--primary-color);
+    display: inline-block;
+    padding: 10px 20px;
+    background-color: var(--primary-color);
+    color: var(--white-color);
+    border-radius: 5px;
     text-decoration: none;
+    font-weight: bold;
 }
 
 .under-construction a:hover {
-    text-decoration: underline;
+    background-color: #0056b3;
+    text-decoration: none;
 }
 
 /* Footer */
 footer {
     background-color: var(--dark-color);
     color: var(--white-color);
+    padding: 20px;
+    border-top: 2px solid var(--primary-color);
+    text-align: center;
 }
 
 footer p {
     margin: 0;
+    font-size: 14px;
 }
 
 /* Responsive Adjustments */
